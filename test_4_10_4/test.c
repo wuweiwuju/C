@@ -15,7 +15,7 @@ void game()
 	ret = rand()%100+1;
 	while(1) 
 	{
-		scanf("%d", &guess);
+		scanf_s("%d", &guess);
 		if (guess < ret)
 		{
 			printf("²ÂÐ¡ÁË\n");
@@ -41,7 +41,7 @@ int main()
 	{
 		menu();
 			printf("ÇëÑ¡Ôñ£º");
-			scanf("%d", &input);
+			scanf_s("%d", &input);
 		switch (input)
 		{
 		case 1:

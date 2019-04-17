@@ -20,12 +20,12 @@ int main()
 	printf("请输入数组1：");
 	for (i = 0; i < sizeof(arr1) / sizeof(arr1[0]); i++)
 	{
-		scanf("%d", &arr1[i]);
+		scanf_s("%d", &arr1[i]);
 	}
 	printf("请输入数组2：");
 	for (i = 0; i < sizeof(arr1) / sizeof(arr1[0]); i++)
 	{
-		scanf("%d", &arr2[i]);
+		scanf_s("%d", &arr2[i]);
 	}
 	swap(arr1, arr2, sizeof(arr1) / sizeof(arr1[0]));
 	for (i = 0; i < sizeof(arr1) / sizeof(arr1[0]); i++)

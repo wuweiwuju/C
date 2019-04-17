@@ -9,8 +9,9 @@ int main()
 {
 	int ch;
 	printf("ÇëÊäÈëÒ»¸ö×Ö·û:\n");
-	while ((ch = getchar()) != EOF)
+	while (1)
 	{
+		scanf("%c", &ch);
 		if (ch >= 'a' && ch <= 'z')
 			printf("%c\n", ch - 32);
 		else

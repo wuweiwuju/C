@@ -7,8 +7,8 @@
 //    *********
 //   ***********
 //  *************
-//   ***********
-//    *********
+//   ***********  
+//    *********   
 //     *******
 //      *****
 //       ***
@@ -17,12 +17,14 @@
 #include<stdlib.h>
 int main()
 {
+	int maxline;
 	int i = 0;
 	int j = 0;
 	int k = 0;
-	for (i = 1; i <= 6; i++)
+	scanf_s("%d", &maxline);
+	for (i = 1; i <= maxline; i++)
 	{
-		for (j = 1; j <= 6-i; j++)
+		for (j = 1; j <= maxline-i; j++)
 		{
 			printf(" ");
 		}
@@ -32,13 +34,13 @@ int main()
 		}
 		printf("\n");
 	}
-	for (i = 1; i <= 5; i++)
+	for (i = 1; i <= maxline-1; i++)
 	{
 		for (j = 1; j <= i; j++)
 		{
 			printf(" ");
 		}
-		for (k = 1; k <= 11-2*i; k++)
+		for (k = 1; k <= 2*(maxline-1)-(2*i-1); k++)
 		{
 			printf("*");
 		}
