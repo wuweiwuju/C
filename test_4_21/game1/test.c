@@ -5,10 +5,6 @@ void menu()
 	printf("***  1.play     0.exit   ***\n");
 	printf("****************************\n");
 }
-//玩家赢---'X'
-//电脑赢---'0'
-//平局---'Q'
-//继续---' '
 void game()
 {
 	char board[ROW][COL] = { 0 };
