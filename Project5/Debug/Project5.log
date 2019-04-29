@@ -1,7 +1,0 @@
-﻿  test.c
-D:\代码\test\Project5\test.c(10): warning C4013: “printf”未定义；假设外部返回 int
-D:\代码\test\Project5\test.c(11): warning C4013: “scanf”未定义；假设外部返回 int
-D:\代码\test\Project5\test.c(12): warning C4013: “strcmp”未定义；假设外部返回 int
-test.obj : error LNK2019: 无法解析的外部符号 _printf，该符号在函数 _main 中被引用
-test.obj : error LNK2019: 无法解析的外部符号 _scanf，该符号在函数 _main 中被引用
-D:\代码\test\Project5\Debug\Project5.exe : fatal error LNK1120: 2 个无法解析的外部命令

@@ -1,3 +1,0 @@
-﻿  test.c
-D:\代码\test\test_4_12\test.c(18): warning C4716: “mul_”: 必须返回一个值
-  test_4_12.vcxproj -> D:\代码\test\test_4_12\Debug\test_4_12.exe

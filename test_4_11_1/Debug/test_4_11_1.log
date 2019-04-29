@@ -1,3 +1,0 @@
-﻿  test.c
-D:\代码\test\test_4_11_1\test.c(11): warning C4716: “swap”: 必须返回一个值
-  test_4_11_1.vcxproj -> D:\代码\test\test_4_11_1\Debug\test_4_11_1.exe

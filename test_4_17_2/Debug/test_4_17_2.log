@@ -1,3 +1,0 @@
-﻿  test.c
-D:\代码\test\test_4_17_2\test.c(11): warning C4716: “print”: 必须返回一个值
-  test_4_17_2.vcxproj -> D:\代码\test\test_4_17_2\Debug\test_4_17_2.exe
