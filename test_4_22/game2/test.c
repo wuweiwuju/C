@@ -1,7 +1,20 @@
 #include"game.h"
 void game()
 {
-	
+	char mine[ROWS][COLS] = { 0 };
+	char show[ROWS][COLS] = { 0 };
+	//≥ı ºªØ∆Â≈Ã
+	Initboard(mine, ROWS, COLS, '0');
+	Initboard(show, ROWS, COLS, '*');
+	//¥Ú”°∆Â≈Ã
+	/*Displayboard(mine, ROW, COL);*/
+	Displayboard(show, ROW, COL);
+	//≤º÷√¿◊
+	Setmine(mine, ROW, COL);
+	/*Displayboard(mine, ROW, COL);*/
+	//…®¿◊
+
+
 }
 void menu()
 {
@@ -17,7 +30,7 @@ void test()
 	do
 	{
 		menu();
-		scanf("%d", &input);
+		scanf_s("%d", &input);
 		switch (input)
 		{
 		case 1:

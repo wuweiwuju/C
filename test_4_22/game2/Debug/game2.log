@@ -1,3 +1,2 @@
-﻿  test.c
-D:\代码\test\test_4_22\game2\test.c(25): warning C4098: “test”:“void”函数返回值
+﻿  game.c
   game2.vcxproj -> D:\代码\test\test_4_22\game2\Debug\game2.exe
