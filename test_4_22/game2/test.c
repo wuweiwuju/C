@@ -13,7 +13,7 @@ void game()
 	Setmine(mine, ROW, COL);
 	/*Displayboard(mine, ROW, COL);*/
 	//É¨À×
-
+	Findmine(mine, show, ROW, COL);
 
 }
 void menu()
