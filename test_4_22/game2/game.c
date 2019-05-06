@@ -79,7 +79,7 @@ void Findmine(char mine[ROWS][COLS], char show[ROWS][COLS], int row, int col)
 			else
 			{
 				     //统计x,y周围有多少个雷
-				     char count = GetmineCount(show, x, y);
+				     int count = GetmineCount(mine, x, y);
 					 show[x][y]=count + '0';
 					 Displayboard(show, ROW, COL);
 					 win++;

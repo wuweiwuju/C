@@ -7,11 +7,11 @@ void game()
 	Initboard(mine, ROWS, COLS, '0');
 	Initboard(show, ROWS, COLS, '*');
 	//¥Ú”°∆Â≈Ã
-	/*Displayboard(mine, ROW, COL);*/
+	Displayboard(mine, ROW, COL);
 	Displayboard(show, ROW, COL);
 	//≤º÷√¿◊
 	Setmine(mine, ROW, COL);
-	/*Displayboard(mine, ROW, COL);*/
+	Displayboard(mine, ROW, COL);
 	//…®¿◊
 	Findmine(mine, show, ROW, COL);
 
