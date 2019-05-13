@@ -153,5 +153,4 @@ void Findmine(char mine[ROWS][COLS], char show[ROWS][COLS], int row, int col)
 		printf("¹§Ï²Äã£¬É¨À×³É¹¦\n");
 		Displayboard(mine, ROW, COL);
 	}
-
 }

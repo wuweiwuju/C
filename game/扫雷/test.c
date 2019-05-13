@@ -14,9 +14,9 @@ void game()
 	//²¼ÖÃÀ×
 	Setmine(mine, ROW, COL);
 	/*Displayboard(mine, ROW, COL);*/
-	//É¨À×
-	First_SafeMine(mine, show, ROW, COL);
 	
+	First_SafeMine(mine, show, ROW, COL);
+	//É¨À×
 	Findmine(mine, show, ROW, COL);
 
 }
