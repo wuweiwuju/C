@@ -1,0 +1,4 @@
+﻿  test.c
+D:\代码\test\test_5_25\test.c(14): warning C4047: “!=”:“int *”与“int”的间接级别不同
+D:\代码\test\test_5_25\test.c(35): warning C4047: “!=”:“int *”与“int”的间接级别不同
+  test_5_25.vcxproj -> D:\代码\test\test_5_25\Debug\test_5_25.exe
