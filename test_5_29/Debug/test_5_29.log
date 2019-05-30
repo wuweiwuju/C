@@ -1,0 +1,4 @@
+﻿  test.c
+D:\代码\test\test_5_29\test.c(57): warning C4033: “Reseach_sou”必须返回值
+D:\代码\test\test_5_29\test.c(66): warning C4716: “Reseach_sou”: 必须返回一个值
+  test_5_29.vcxproj -> D:\代码\test\test_5_29\Debug\test_5_29.exe
