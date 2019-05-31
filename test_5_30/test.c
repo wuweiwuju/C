@@ -81,51 +81,128 @@
 //	char name[20];
 //	int age;
 //};
-//int s_b_name(const char* e1, const char* e2)
-//{
-//	return strcmp(((struct S*)e1)->name, ((struct S*)e2)->name);
-//}
-////int s_b_age(const char* e1, const char* e2)
+////int s_b_name(const char* e1, const char* e2)
 ////{
-////	return ((struct S*)e1)->age-((struct S*)e2)->age;
+////	return strcmp(((struct S*)e1)->name, ((struct S*)e2)->name);
 ////}
+//int s_b_age(const char* e1, const char* e2)
+//{
+//	return ((struct S*)e1)->age-((struct S*)e2)->age;
+//}
 //void output(struct S s[], int n)
 //{
 //	int i = 0;
 //	for(i=0;i<n;i++)
 //	{
-//		printf("%s ", s[i].name);
+//		printf("%d ", s[i].age);
 //	}
 //	printf("\n");
-//	return;
 //}
-//void test()
-//{
-//	struct S arr[] = { {"zhangsan",15},{"lisi",35},{"wangwu",20} };
-//	output(arr, sizeof(arr) / sizeof(arr[0]));
-//	qsort(arr, sizeof(arr) / sizeof(arr[0]), sizeof(struct S), s_b_name);
-//	output(arr, sizeof(arr) / sizeof(arr[0]));
-//}
-////void test1()
+////void test()
 ////{
 ////	struct S arr[] = { {"zhangsan",15},{"lisi",35},{"wangwu",20} };
 ////	output(arr, sizeof(arr) / sizeof(arr[0]));
-////	qsort(arr, sizeof(arr) / sizeof(arr[0]), sizeof(struct S), s_b_age);
+////	qsort(arr, sizeof(arr) / sizeof(arr[0]), sizeof(struct S), s_b_name);
 ////	output(arr, sizeof(arr) / sizeof(arr[0]));
-////
 ////}
+//void test1()
+//{
+//	struct S arr[] = { {"zhangsan",15},{"lisi",35},{"wangwu",20} };
+//	output(arr, sizeof(arr) / sizeof(arr[0]));
+//	qsort(arr, sizeof(arr) / sizeof(arr[0]), sizeof(struct S), s_b_age);
+//	output(arr, sizeof(arr) / sizeof(arr[0]));
+//}
 //int main()
 //{
-//	test();
-//	/*test1();*/
+//	/*test();*/
+//	test1();
 //	system("pause");
 //	return 0;
 //}
 //自己定义的库函数排序
 #include<stdio.h>
 #include<stdlib.h>
+struct S
+{
+	char name[20];
+	int age;
+};
+void swap(char* buf1,char* buf2,int width)
+{
+	int i = 0;
+	for (i = 0; i < width; i++)
+	{
+		int tmp = *buf2;
+		*buf2 = *buf1;
+		*buf1 = tmp;
+		buf2++;
+		buf1++;
+	}
+}
+int s_b_name(const char* e1, const char* e2)
+{
+	return strcmp(((struct S*)e1)->name, ((struct S*)e2)->name);
+}
+//int s_b_age(const char* e1, const char* e2)
+//{
+//	return ((struct S*)e1)->age-((struct S*)e2)->age;
+//}
+//int cmp_int(const void* e1, const void* e2)
+//{
+//	return *(int*)e1 - *(int*)e2;
+//}
+void bubble_sort(void *base,int num,int width, int(* cmp)(const void* e1, const void* e2))
+{
+	int i = 0;
+	int j = 0;
+	for (i = 0; i < num - 1; i++)
+	{
+		for (j = 0; j < num - i - 1; j++)
+		{
+			if (cmp((char *)base+j*width,(char*)base + (j+1) * width)>0)
+			{
+				swap((char*)base + j * width, (char*)base + (j + 1) * width,width);
+			}
+		}
+	}
+}
+//void print_sort(int* arr,int sz)
+//{
+//	int i = 0;
+//	for (i = 0; i < sz; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	printf("\n");
+//}
+void output(struct S s[], int n)
+{
+	int i = 0;
+	for(i=0;i<n;i++)
+	{
+		printf("%s ", s[i].name);
+	}
+	printf("\n");
+}
+//void test1()
+//{
+//	int arr[] = { 1,3,5,7,9,2,4,6,8,0 };
+//	print_sort(arr, sizeof(arr) / sizeof(int));
+//	bubble_sort(arr, sizeof(arr) / sizeof(int), sizeof(int), cmp_int);
+//	print_sort(arr, sizeof(arr) / sizeof(int));
+//}
+void test2()
+{
+	/*int arr[] = { 1,3,5,7,9,2,4,6,8,0 };*/
+	struct S arr[] = { {"zhangsan",15},{"lisi",35},{"wangwu",20} };
+	output(arr, sizeof(arr) / sizeof(arr[0]));
+	qsort(arr, sizeof(arr) / sizeof(arr[0]), sizeof(struct S), s_b_name);
+	output(arr, sizeof(arr) / sizeof(arr[0]));
+}
 int main()
 {
+	/*test1();*/
+	test2();
 	system("pause");
 	return 0;
 }
