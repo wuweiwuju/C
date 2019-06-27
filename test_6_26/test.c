@@ -114,7 +114,6 @@ void left_remove(char arr[], int n)
 	{
 		*mov1++ = *res2++;
 	}
-
 }
 int main()
 {
