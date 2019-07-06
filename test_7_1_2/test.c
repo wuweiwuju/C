@@ -3,7 +3,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 //µ›πÈÀ„∑®
-int fib1(size_t N) 
+long long fib1(size_t N) 
 {
 	if (N < 2)
 		return N;
@@ -11,7 +11,7 @@ int fib1(size_t N)
 }
 int main()
 {
-	printf("%d\n", fib1(6));
+	printf("%lld\n", fib1(6));
 	system("pause");
 	return 0;
 }  
