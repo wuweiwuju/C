@@ -1,0 +1,8 @@
+﻿  Seqlist.c
+D:\代码\test\test_7_7\Seqlist.c(68,16): warning C4018:  “<”: 有符号/无符号不匹配
+D:\代码\test\test_7_7\Seqlist.c(81,16): warning C4018:  “<”: 有符号/无符号不匹配
+D:\代码\test\test_7_7\Seqlist.c(92,17): warning C4018:  “<”: 有符号/无符号不匹配
+D:\代码\test\test_7_7\Seqlist.c(107,18): warning C4018:  “<”: 有符号/无符号不匹配
+D:\代码\test\test_7_7\Seqlist.c(119,18): warning C4018:  “<”: 有符号/无符号不匹配
+D:\代码\test\test_7_7\Seqlist.c(147,16): warning C4018:  “<”: 有符号/无符号不匹配
+  test_7_7.vcxproj -> D:\代码\test\test_7_7\Debug\shunxubiao_7.7.exe
