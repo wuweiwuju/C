@@ -65,7 +65,7 @@ void SeqlistPushFront(Seqlist* psl, SLDataType x)
 	int i = 0;
 	assert(psl);
 	CheckCapicity(psl);
-	for (i = 0; i < psl->size; i++)
+	for (i = psl->size-1; i >= 0; i--)
 	{
 		psl->array[i + 1] = psl->array[i];
 	}
@@ -149,4 +149,72 @@ void Seqlistprint(Seqlist* psl)
 		printf("%d ", psl->array[i]);
 	}
 	printf("\n");
+}
+//冒泡排序
+void SeqlistBubbleSort(Seqlist* psl)
+{
+	int i = 0;
+	int j = 0;
+	int count = 0;
+	assert(psl);
+	for (i = 0; i < psl->size-1; i++)
+	{
+		count = 0;
+		for (j = 0; j < psl->size - i - 1; j++)
+		{
+			if (psl->array[j] > psl->array[j + 1])
+			{
+				int tmp = psl->array[j];
+				psl->array[j] = psl->array[j + 1];
+				psl->array[j + 1] = tmp;
+				count = 1;
+			}
+			if (count == 0)
+			{
+				break;
+			}
+		}
+	}
+}
+//二分查找(时间复杂度：O(N) 空间复杂度 O(1))(只能是非递归)
+int SeqlistBinaryFind(Seqlist* psl,SLDataType x)
+{
+	int mid = 0;
+	int left = 0;
+	int right = psl->size-1;
+	while (left<=right)
+	{
+		mid = left + (right - left) / 2;
+		if (psl->array[mid] < x)
+		{
+			left = mid + 1;
+		}
+		else if (psl->array[mid] > x)
+		{
+			right = mid - 1;
+		}
+		else if(psl->array[mid] == x)
+		{
+			return mid;
+		}
+	}
+	return -1;
+}
+//移除相同的一个数字
+void SeqlistRemoveAll(Seqlist* psl, SLDataType x)
+{
+	assert(psl);
+	int count = 0;
+	for (int i = 0; i < psl->size; i++)
+	{
+		if (psl->array[i] == x)
+		{
+			count++;
+		}
+		else
+		{
+			psl->array[i - count] = psl->array[i];
+		}
+	}
+	psl->size -= count;
 }

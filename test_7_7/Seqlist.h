@@ -37,3 +37,6 @@ void SeqlistErase(Seqlist* psl, size_t pos);
 void SeqlistRemove(Seqlist* psl, SLDataType x);
 void SeqlistModify(Seqlist* psl, size_t pos, SLDataType x);
 void Seqlistprint(Seqlist* psl);
+void SeqlistBubbleSort(Seqlist* psl);
+int SeqlistBinaryFind(Seqlist* psl, SLDataType x);
+void SeqlistRemoveAll(Seqlist* psl, SLDataType x);
