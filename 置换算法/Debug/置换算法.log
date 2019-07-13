@@ -1,6 +1,0 @@
-﻿  test.cpp
-D:\代码\test\置换算法\test.cpp(280): warning C4018: “<”: 有符号/无符号不匹配
-D:\代码\test\置换算法\test.cpp(293): warning C4018: “<”: 有符号/无符号不匹配
-D:\代码\test\置换算法\test.cpp(294): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-D:\代码\test\置换算法\test.cpp(338): warning C4326: “main”的返回类型应为“int”而非“void”
-  置换算法.vcxproj -> D:\代码\test\置换算法\Debug\置换算法.exe
