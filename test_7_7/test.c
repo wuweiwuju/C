@@ -1,5 +1,4 @@
 #include"Seqlist.h"
-
 void menu()
 {
 	printf("****************************************************\n");
@@ -134,7 +133,6 @@ void test()
 			printf("选择有误！请重新选择！\n");
 			break;
 		}
-
 	} while (input);
 }
 int main()

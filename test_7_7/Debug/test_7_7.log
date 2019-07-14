@@ -1,3 +1,13 @@
-﻿  test.c
-D:\代码\test\test_7_7\test.c(131,12): warning C4098:  “test”:“void”函数返回值
+﻿  Seqlist.c
+D:\代码\test\test_7_7\Seqlist.c(78,16): warning C4018:  “<”: 有符号/无符号不匹配
+D:\代码\test\test_7_7\Seqlist.c(89,17): warning C4018:  “<”: 有符号/无符号不匹配
+D:\代码\test\test_7_7\Seqlist.c(104,18): warning C4018:  “<”: 有符号/无符号不匹配
+D:\代码\test\test_7_7\Seqlist.c(116,18): warning C4018:  “<”: 有符号/无符号不匹配
+D:\代码\test\test_7_7\Seqlist.c(144,16): warning C4018:  “<”: 有符号/无符号不匹配
+D:\代码\test\test_7_7\Seqlist.c(157,16): warning C4018:  “<”: 有符号/无符号不匹配
+D:\代码\test\test_7_7\Seqlist.c(160,17): warning C4018:  “<”: 有符号/无符号不匹配
+  test.c
+D:\代码\test\test_7_7\Seqlist.c(205,20): warning C4018:  “<”: 有符号/无符号不匹配
+  正在生成代码...
+D:\代码\test\test_7_7\test.c(130,12): warning C4098:  “test”:“void”函数返回值
   test_7_7.vcxproj -> D:\代码\test\test_7_7\Debug\shunxubiao_7.7.exe

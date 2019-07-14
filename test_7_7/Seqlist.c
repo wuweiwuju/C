@@ -11,7 +11,6 @@ void SeqlistInit(Seqlist* psl)
 	}
 	psl->capicity = 10;
 	psl->size = 0;
-
 }
 //ÊÍ·ÅË³Ðò±í
 void SeqlistDestory(Seqlist* psl)
@@ -41,8 +40,7 @@ void CheckCapicity(Seqlist* psl)
 		memcpy(pTmp, psl->array, psl->size * sizeof(SLDataType));
 		free(psl->array);
 		psl->array = pTmp;
-		psl->capicity = newCapicity;
-		
+		psl->capicity = newCapicity;	
 	}
 }
 //Î²²å
@@ -71,7 +69,6 @@ void SeqlistPushFront(Seqlist* psl, SLDataType x)
 	}
 	psl->array[0] = x;
 	psl->size++;
-
 }
 //Í·É¾
 void SeqlistPopFront(Seqlist* psl)
