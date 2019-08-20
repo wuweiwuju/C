@@ -1,4 +1,5 @@
 #include"Contact.h"
+contact con;
 void menu()
 {
 	printf("************************\n");
@@ -19,9 +20,8 @@ enum //不加枚举名作用类似于#define
 	Clear,
 	Sort
 };
-int main()
+void test()
 {
-	contact con;
 	int input = 0;
 	InitContact(&con);
 	do
@@ -34,7 +34,7 @@ int main()
 		{
 		case Exit:
 			printf("退出程序\n");
-			return 0;
+			return;
 		case Add:
 			AddContact(&con);
 			break;
@@ -60,8 +60,12 @@ int main()
 			printf("选择有误，请重新选择\n");
 			break;
 		}
-		
+
 	} while (input);
+}
+int main()
+{
+	test();
 	system("pause");
 	return 0;
 }

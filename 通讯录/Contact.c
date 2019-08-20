@@ -14,20 +14,23 @@ void AddContact(contact* pcon)
 		printf("内存已满，请删除无用的联系人之后再加\n");
 		return;
 	}
-	printf("请输入姓名:>\n");
-	scanf("%s", pcon->data[pcon->size].name);
-	printf("请输入年龄:>\n");
-	scanf("%d", &(pcon->data[pcon->size].age));
-	printf("请输入性别:>\n");
-	scanf("%s", pcon->data[pcon->size].sex);
-	printf("请输入地址:>\n");
-	scanf("%s", pcon->data[pcon->size].addr);
-	printf("请输入电话:>\n");
-	scanf("%s", pcon->data[pcon->size].tele);
-	pcon->size++;
-	printf("添加成功\n");
+	else
+	{
+		printf("请输入姓名:>\n");
+		scanf("%s", pcon->data[pcon->size].name);
+		printf("请输入年龄:>\n");
+		scanf("%d", &(pcon->data[pcon->size].age));
+		printf("请输入性别:>\n");
+		scanf("%s", pcon->data[pcon->size].sex);
+		printf("请输入地址:>\n");
+		scanf("%s", pcon->data[pcon->size].addr);
+		printf("请输入电话:>\n");
+		scanf("%s", pcon->data[pcon->size].tele);
+		pcon->size++;
+		printf("添加成功\n");
+	}
 }
-int FindContact(contact* pcon,char name[])
+static int FindContact(const contact* pcon,char name[])//只有内部可以看到
 {
 	int i = 0;
 	for (i = 0; i < pcon->size; i++)
@@ -63,7 +66,7 @@ void DelContact(contact* pcon)
 	pcon->size--;
 	printf("删除成功！\n");
 }
-void ShowContact(contact* pcon)
+void ShowContact(const contact* pcon)
 {
 	assert(pcon);
 	if (pcon->size == 0)
@@ -73,14 +76,14 @@ void ShowContact(contact* pcon)
 	for (i = 0; i < pcon->size; i++)
 	{
 		printf("%10s\t%5d\t%5s\t%15s\t%15s\t\n",
-			pcon->data->name,
-			pcon->data->age,
-			pcon->data->sex,
-			pcon->data->addr,
-			pcon->data->tele);
+			pcon->data[i].name,
+			pcon->data[i].age,
+			pcon->data[i].sex,
+			pcon->data[i].addr,
+			pcon->data[i].tele);
 	}
 }
-void SearchContact(contact* pcon)
+void SearchContact(const contact* pcon)
 {
 	assert(pcon);
 	if (pcon->size == 0)
@@ -139,4 +142,21 @@ void SortContact(contact* pcon)
 	assert(pcon);
 	if (pcon->size == 0)
 		return;
+	int i = 0;
+	int j = 0;
+	PeoInfo tmp;
+	for (i = 0; i < pcon->size-1; i++)
+	{
+		for (j = 0; j < pcon->size - i - 1; j++)
+		{
+			if (strcmp(pcon->data[j].name, pcon->data[j + 1].name) > 0)
+			{
+				tmp = pcon->data[j];
+				pcon->data[j] = pcon->data[j + 1];
+				pcon->data[j+1] = tmp;
+			}
+		}
+	}
+	printf("排序成功\n");
 }
+

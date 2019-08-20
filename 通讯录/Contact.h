@@ -33,8 +33,8 @@ typedef struct contact
 void InitContact(contact* pcon);
 void AddContact(contact* pcon);
 void DelContact(contact* pcon);
-void ShowContact(contact* pcon);
-void SearchContact(contact* pcon);
+void ShowContact(const contact* pcon);
+void SearchContact(const contact* pcon);
 void ClearContact(contact* pcon);
 void ModifyContact(contact* pcon);
 void SortContact(contact* pcon);
