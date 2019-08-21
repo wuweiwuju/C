@@ -1,10 +1,2 @@
 ﻿  test.c
-D:\代码\test\题目练习8_20_2\test.c(12,18): warning C4047:  “函数”:“const char *”与“char”的间接级别不同
-D:\代码\test\题目练习8_20_2\test.c(12,18): warning C4024:  “strcmp”: 形参和实参 1 的类型不同
-D:\代码\test\题目练习8_20_2\test.c(12,22): warning C4047:  “函数”:“const char *”与“int”的间接级别不同
-D:\代码\test\题目练习8_20_2\test.c(12,22): warning C4024:  “strcmp”: 形参和实参 2 的类型不同
-D:\代码\test\题目练习8_20_2\test.c(14,15): warning C4047:  “函数”:“char *”与“char”的间接级别不同
-D:\代码\test\题目练习8_20_2\test.c(14,15): warning C4024:  “strcpy”: 形参和实参 1 的类型不同
-D:\代码\test\题目练习8_20_2\test.c(14,22): warning C4047:  “函数”:“const char *”与“int”的间接级别不同
-D:\代码\test\题目练习8_20_2\test.c(14,22): warning C4024:  “strcpy”: 形参和实参 2 的类型不同
   题目练习8_20_2.vcxproj -> D:\代码\test\题目练习8_20_2\Debug\题目练习8_20_2.exe
