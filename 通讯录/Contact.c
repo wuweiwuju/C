@@ -1,35 +1,96 @@
 #include"Contact.h"
 
+//void InitContact(contact* pcon)
+//{
+//	assert(pcon);
+//	pcon->size = 0;
+//	memset(pcon->data, 0, sizeof(pcon->data));
+//}
 void InitContact(contact* pcon)
 {
 	assert(pcon);
+	pcon->data = (PeoInfo*)malloc(1* sizeof(PeoInfo));
+	if (pcon->data == NULL)
+	{
+		perror("InitContact::malloc");
+		exit(1);
+	}
 	pcon->size = 0;
-	memset(pcon->data, 0, sizeof(pcon->data));
+	pcon->capacity = 1;
+}
+int CheckContact(contact* pcon)
+{
+	assert(pcon);
+	if (pcon->size == pcon->capacity)
+	{
+		PeoInfo* ptr = (PeoInfo*)realloc(pcon->data, (pcon->capacity + 2) * sizeof(PeoInfo));
+		if (ptr == NULL)
+		{
+			return 0;
+		}
+		else
+		{
+			pcon->data = ptr;
+			pcon->capacity += 2;
+			printf("增容成功\n");
+			return 1;
+		}
+	}
+	return 1;
 }
 void AddContact(contact* pcon)
 {
 	assert(pcon);
-	if (pcon->size == MAX)
+	if (CheckContact(pcon) == 0)
 	{
-		printf("内存已满，请删除无用的联系人之后再加\n");
-		return;
+		printf("增容失败！");
+		exit(1);
 	}
-	else
-	{
-		printf("请输入姓名:>\n");
-		scanf("%s", pcon->data[pcon->size].name);
-		printf("请输入年龄:>\n");
-		scanf("%d", &(pcon->data[pcon->size].age));
-		printf("请输入性别:>\n");
-		scanf("%s", pcon->data[pcon->size].sex);
-		printf("请输入地址:>\n");
-		scanf("%s", pcon->data[pcon->size].addr);
-		printf("请输入电话:>\n");
-		scanf("%s", pcon->data[pcon->size].tele);
-		pcon->size++;
-		printf("添加成功\n");
-	}
+	printf("请输入姓名:>\n");
+	scanf("%s", pcon->data[pcon->size].name);
+	printf("请输入年龄:>\n");
+	scanf("%d", &(pcon->data[pcon->size].age));
+	printf("请输入性别:>\n");
+	scanf("%s", pcon->data[pcon->size].sex);
+	printf("请输入地址:>\n");
+	scanf("%s", pcon->data[pcon->size].addr);
+	printf("请输入电话:>\n");
+	scanf("%s", pcon->data[pcon->size].tele);
+	pcon->size++;
+	printf("添加成功\n");
 }
+void DestroyContact(contact* pcon)
+{
+	assert(pcon);
+	pcon->size = 0;
+	pcon->capacity = 0;
+	free(pcon->data);
+	pcon->data = NULL;
+}
+//void AddContact(contact* pcon)
+//{
+//	assert(pcon);
+//	if (pcon->size == MAX)
+//	{
+//		printf("内存已满，请删除无用的联系人之后再加\n");
+//		return;
+//	}
+//	else
+//	{
+//		printf("请输入姓名:>\n");
+//		scanf("%s", pcon->data[pcon->size].name);
+//		printf("请输入年龄:>\n");
+//		scanf("%d", &(pcon->data[pcon->size].age));
+//		printf("请输入性别:>\n");
+//		scanf("%s", pcon->data[pcon->size].sex);
+//		printf("请输入地址:>\n");
+//		scanf("%s", pcon->data[pcon->size].addr);
+//		printf("请输入电话:>\n");
+//		scanf("%s", pcon->data[pcon->size].tele);
+//		pcon->size++;
+//		printf("添加成功\n");
+//	}
+//}
 static int FindContact(const contact* pcon,char name[])//只有内部可以看到
 {
 	int i = 0;

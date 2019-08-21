@@ -51,6 +51,7 @@ void test()
 			ShowContact(&con);
 			break;
 		case Clear:
+			DestroyContact(&con);
 			ClearContact(&con);
 			break;
 		case Sort:
