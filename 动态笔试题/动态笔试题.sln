@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "动态笔试题", "动态笔试题.vcxproj", "{F8D42DB8-DCEA-420D-83BF-0441CACC08ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8D42DB8-DCEA-420D-83BF-0441CACC08ED}.Debug|x64.ActiveCfg = Debug|x64
+		{F8D42DB8-DCEA-420D-83BF-0441CACC08ED}.Debug|x64.Build.0 = Debug|x64
+		{F8D42DB8-DCEA-420D-83BF-0441CACC08ED}.Debug|x86.ActiveCfg = Debug|Win32
+		{F8D42DB8-DCEA-420D-83BF-0441CACC08ED}.Debug|x86.Build.0 = Debug|Win32
+		{F8D42DB8-DCEA-420D-83BF-0441CACC08ED}.Release|x64.ActiveCfg = Release|x64
+		{F8D42DB8-DCEA-420D-83BF-0441CACC08ED}.Release|x64.Build.0 = Release|x64
+		{F8D42DB8-DCEA-420D-83BF-0441CACC08ED}.Release|x86.ActiveCfg = Release|Win32
+		{F8D42DB8-DCEA-420D-83BF-0441CACC08ED}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B11D015-FD75-4026-A864-91907970E69A}
+	EndGlobalSection
+EndGlobal
