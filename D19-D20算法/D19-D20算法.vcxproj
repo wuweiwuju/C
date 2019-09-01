@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{6B5F95F0-5140-4E88-AC36-47DF53367C0B}</ProjectGuid>
-    <RootNamespace>D9D10算法</RootNamespace>
+    <ProjectGuid>{C139B854-76AB-48B4-935F-2CF46B61B6C9}</ProjectGuid>
+    <RootNamespace>D19D20算法</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
