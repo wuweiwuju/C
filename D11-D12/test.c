@@ -47,53 +47,34 @@
 //}
 //对于一个字符串，请设计一个高效算法，找到第一次重复的字符
 //例如：“qywyer23tdd”返回：y
-//char str_replace(char* str,int sz)
-//{
-//	for (int i = 0; i < sz; i++)
-//	{
-//		if(str[i] == str[i+1])
-//		{
-//
-//		}
-//	}
-//}
-//int main()
-//{
-//	char* str = "qywyer23tdd";
-//	char c = str_replace(str,strlen(str));
-//	printf("%c\n", c);
-//	system("pause");
-//	return 0;
-//}
-
-//char firstNotRepeate(char* str,int SIZE)
-//{
-//	char* pHashKey = str; 
-//	int hashTable[12] = {0};
-//	int i; 
-//	for (i = 0; i < SIZE; i++) 
-//	{ 
-//		hashTable[i] = 0;
-//	}
-//	while (*(pHashKey) != '\0')
-//	{
-//		hashTable[*(pHashKey++)]++;
-//	}
-//	pHashKey = str;
-//	while (*(pHashKey) != '\0') 
-//	{
-//			if (hashTable[*(pHashKey)] == 2) 
-//			{ 
-//				return *(pHashKey);
-//			}
-//			pHashKey++;
-//	}
-//	return '\0';
-//}
-//int main() 
-//{ 
-//	char* str = "qywyer23tdd";
-//	char ch = firstNotRepeate(str, strlen(str));
-//	printf("%c\n", ch);
-//	return 0;
-//}
+char firstNotRepeate(char* str,int SIZE)
+{
+	char* pHashKey = str; 
+	int hashTable[12] = {0};
+	int i; 
+	for (i = 0; i < SIZE; i++) 
+	{ 
+		hashTable[i] = 0;
+	}
+	while (*(pHashKey) != '\0')
+	{
+		hashTable[*(pHashKey++)]++;
+	}
+	pHashKey = str;
+	while (*(pHashKey) != '\0') 
+	{
+			if (hashTable[*(pHashKey)] == 2) 
+			{ 
+				return *(pHashKey);
+			}
+			pHashKey++;
+	}
+	return '\0';
+}
+int main() 
+{ 
+	char* str = "qywyer23tdd";
+	char ch = firstNotRepeate(str, strlen(str));
+	printf("%c\n", ch);
+	return 0;
+}
