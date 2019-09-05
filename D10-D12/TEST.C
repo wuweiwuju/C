@@ -19,21 +19,21 @@
 //	printf("%d\n", strlen(a));
 //	return 0;
 //}
-//char* myString()
-//{
-//	char buffer[6] = { 0 };
-//	char* s = "Hello World";
-//	for (int i = 0; i < sizeof(buffer) - 1; i++)
-//	{
-//		buffer[i] = *(s + i);
-//	}
-//	return buffer;
-//}
-//int main()
-//{
-//	printf("%s\n", myString());
-//	return 0;
-//}
+char* myString()
+{
+	char buffer[6] = { 0 };
+	char* s = "Hello World";
+	for (int i = 0; i < sizeof(buffer) - 1; i++)
+	{
+		buffer[i] = *(s + i);
+	}
+	return buffer;
+}
+int main()
+{
+	printf("%s\n", myString());
+	return 0;
+}
 //int fun(char* s)
 //{
 //	char* p = s;
@@ -68,3 +68,36 @@
 //	printf("%d\n", result);
 //	return 0;
 //}
+int main()
+{
+	char* str[3] = { "stra","strb","strc" };
+	char* p = str[0];
+	int i = 0;
+	while (i < 3)
+	{
+		printf("%s ", p++);
+		i++;
+	}
+	return 0;
+}
+
+int main()
+{
+	char a[1000];
+	int i;
+	for (i = 0; i < 1000; i++)
+	{
+		a[i] = (char)(-1 - i);
+	}
+	printf("%d\n", strlen(a));
+	return 0;
+}
+
+int main()
+{
+	unsigned char a = 0xA5;
+	unsigned char b = ~a >> 4 + 1;
+	printf("%d\n", b);
+	return 0;
+}
+

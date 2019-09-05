@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "暑期汇总", "暑期汇总.vcxproj", "{78990FB5-9C1A-4E31-9637-EA5BD485C090}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78990FB5-9C1A-4E31-9637-EA5BD485C090}.Debug|x64.ActiveCfg = Debug|x64
+		{78990FB5-9C1A-4E31-9637-EA5BD485C090}.Debug|x64.Build.0 = Debug|x64
+		{78990FB5-9C1A-4E31-9637-EA5BD485C090}.Debug|x86.ActiveCfg = Debug|Win32
+		{78990FB5-9C1A-4E31-9637-EA5BD485C090}.Debug|x86.Build.0 = Debug|Win32
+		{78990FB5-9C1A-4E31-9637-EA5BD485C090}.Release|x64.ActiveCfg = Release|x64
+		{78990FB5-9C1A-4E31-9637-EA5BD485C090}.Release|x64.Build.0 = Release|x64
+		{78990FB5-9C1A-4E31-9637-EA5BD485C090}.Release|x86.ActiveCfg = Release|Win32
+		{78990FB5-9C1A-4E31-9637-EA5BD485C090}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC8DF4B7-8EF3-40D9-9D0E-CB1F5A7C3B2D}
+	EndGlobalSection
+EndGlobal

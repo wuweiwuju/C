@@ -57,12 +57,23 @@ int main()
 	char str1[8] = { 'g', 'o', 'o', 'd', '!' };
 	char str2[8] = "good!";
 	char *str3 = "good!";
-	//printf("%d\n", sizeof(str));//4
-	//printf("%s\n", str);
-	printf("%d\n", sizeof(str1));//8
-	printf("%d\n", sizeof(str2));//8
+	printf("%s\n", str);
+	printf("%s\n", str1);
+	printf("%s\n", str2);
+	printf("%s\n", str3);
 	system("pause");
 	return 0;
 }
-
-
+//
+//int main()
+//{
+//	int i = 10;
+//	long long t = sizeof(i++);
+//	printf("%d", i);
+//}
+//
+//int main()
+//{
+//
+//	printf("%f", (double)(10 / 4 * 4));
+//}

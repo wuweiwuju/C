@@ -94,12 +94,12 @@
 //	int n = p2 - p1;
 //	printf("%d", n);
 //}
-//#define F(X,Y) ((X)+(Y))
-//int main()
-//{
-//	int a = 3, b = 4;
-//	printf("%d\n", F(a++, b++));
-//}
+#define F(X,Y) ((X)+(Y))
+int main()
+{
+	int a = 3, b = 4;
+	printf("%d\n", F(a++, b++));
+}
 //int main()
 //{
 //	int i = 1, sum = 0;
@@ -124,16 +124,16 @@
 //	printf("%d", sizeof(struct A));
 //}
 //#pragma pack()
-//enum A
-//{
-//	 X1,
-//	 Y1,
-//	 Z1,
-//	 A1,
-//	 B1
-//};
-//enum A enumA = Y1;
-//enum A enumB = B1;
+enum A
+{
+	 X1,
+	 Y1,
+	 Z1,
+	 A1,
+	 B1
+};
+enum A enumA = Y1;
+enum A enumB = B1;
 //int main()
 //{
 //	printf("%d %d", enumA, enumB);
