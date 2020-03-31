@@ -1,0 +1,5 @@
+﻿  main.cpp
+d:\代码\linux\resource sharers\resource sharers\util.hpp(87): warning C4244: “参数”: 从“int64_t”转换到“long”，可能丢失数据
+d:\代码\linux\resource sharers\resource sharers\util.hpp(88): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\代码\linux\resource sharers\resource sharers\client.hpp(188): warning C4244: “初始化”: 从“int64_t”转换到“int”，可能丢失数据
+  Resource sharers.vcxproj -> D:\代码\Linux\Resource sharers\x64\Debug\Resource sharers.exe
